@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+require 'yaml'
+
+dir = File.join(File.dirname(__FILE__), 'public', 'posts')
+posts_list =  Dir.entries(dir) - %w[. ..]
+
+data = []
+
+posts_list.each do |p|
+  data <<
+  { 
+    'title'     => File.basename(p, ".md"),
+    'slug'      => File.basename(p, ".md"),
+    'content'   => IO.read(File.join(dir, p))
+  }
+end
+
+file = File.open('posts.yaml', 'w')
+file.truncate(0)
+file.write("#{YAML.dump(data)}")
+file.close
