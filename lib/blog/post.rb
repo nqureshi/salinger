@@ -12,7 +12,7 @@ module Blog
     end
     
     def content
-      @config['content']
+       Kramdown::Document.new(@config['content']).to_html
     end
     
     def slug

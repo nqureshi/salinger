@@ -1,10 +1,20 @@
 ---
 - title: another-sample-post
   slug: another-sample-post
-  content: This is another sample post.
+  content: ! 'Hello
+
+    =====
+
+
+    This is another sample post.'
 - title: random
   slug: random
-  content: Random is my new blog post.
+  content: ! 'Random
+
+    =======
+
+
+    Random **is** my new blog post.'
 - title: sample-post
   slug: sample-post
   content: ! "I went to a Balderton \"how to recruit\" event last week. While it was

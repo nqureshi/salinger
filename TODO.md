@@ -1,2 +1,4 @@
-1. Use Kramdown to get the markdown working
-2. Dates, other features of a blog
+- Dates, other features of a blog
+- Look into YAML front matter
+- Directory Watcher gem to automate running 'generate' whenever something changes
+- Write tests?

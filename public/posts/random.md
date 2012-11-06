@@ -1,1 +1,4 @@
-Random is my new blog post.
+Random
+=======
+
+Random **is** my new blog post.

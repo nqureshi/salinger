@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'yaml'
+require 'kramdown'
 
 require File.dirname(__FILE__) + '/lib/blog/' + 'post'
 
@@ -11,7 +12,6 @@ module Blog
     CONTENT_FILE  = File.join(APP_DIR, 'posts.yaml')
     
     get('/') { erb :index }
-    get('/posts') { erb :posts }
     
     get Post::ROUTE do
       @post = posts.find { |p| p.slug  == params[:slug] }
