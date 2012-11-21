@@ -7,7 +7,7 @@
 
 
     This is another sample post.'
-  date: 2012-11-21 12:16:27.000000000 +00:00
+  date: November 21, 2012
 - title: random
   slug: random
   content: ! 'Random
@@ -16,7 +16,7 @@
 
 
     Random **is** my new blog post.'
-  date: 2012-11-21 12:16:54.000000000 +00:00
+  date: November 21, 2012
 - title: sample-post
   slug: sample-post
   content: ! "I went to a Balderton \"how to recruit\" event last week. While it was
@@ -34,4 +34,4 @@
     (eg in Resumator), try to do it on the basis of actual evidence. What impressive
     stuff have they achieved? Otherwise, it's too easy to let subconscious biases
     take over."
-  date: 2012-11-06 05:29:12.000000000 +00:00
+  date: November 06, 2012

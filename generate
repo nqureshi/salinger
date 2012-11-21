@@ -13,7 +13,7 @@ posts_list.each do |p|
     'title'     => File.basename(p, ".md"),
     'slug'      => File.basename(p, ".md"),
     'content'   => IO.read(File.join(dir, p)),
-    'date'      => File.ctime(File.join(dir, p))
+    'date'      => File.ctime(File.join(dir, p)).strftime("%B %d, %Y")
   }
 end
 
