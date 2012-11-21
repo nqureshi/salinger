@@ -1,5 +1,9 @@
 # Salinger
 
+## What is it?
+
+A static blog engine for Ruby.
+
 ## Why?
 
 Writing it was a good Ruby exercise. 
