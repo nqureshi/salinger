@@ -8,7 +8,7 @@ module Blog
     end
     
     def title
-      @config['title']
+      @config['title'].split('-').each{|word| word.capitalize!}.join(' ')
     end
     
     def content
@@ -21,6 +21,10 @@ module Blog
     
     def path
       "/posts/#{ slug }"
+    end
+    
+    def date
+      @config['date']
     end
     
   end

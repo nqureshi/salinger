@@ -1,5 +1,5 @@
 <h1>Person's Blog</h1>
 
 <% posts.each do |p| %>
-	<a href="/post/<%= p.slug %>"><%= p.title %></a><br>
+	<a href="/post/<%= p.slug %>"><%= p.title %></a> - <%= p.date %><br>
 <% end %>
