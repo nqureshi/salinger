@@ -1,5 +1,16 @@
-A blog engine. I wrote this before I looked at Jekyll. Writing it was a good exercise. 
+# Salinger
 
-It's a Sinatra app. The 'generate' script looks at all the Markdown files in public/posts and creates posts based on these. 
+## Why?
 
-Still a lot to do, but basic version runs well so far. 
+Writing it was a good Ruby exercise. 
+
+I also couldn't get Jekyll to do exactly what I wanted it to do on my site without a lot of schleps, and I felt like I'd rather just write a tailored solution myself.
+
+## How does it work?
+
+Put posts in the /public/posts/ dir, in Markdown format.
+
+Run the generate script. This looks at all the Markdown files in public/posts and generates a YAML file of their attributes. 
+
+The helpers 'content' and 'posts' then parse the YAML and create Post objects based on these, with attributes such as @post.title, @post.date etc.
+
